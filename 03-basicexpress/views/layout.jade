@@ -1,7 +1,7 @@
 doctype html
 html
 	head
-		title= title
+		title #{title}: Basic Express
 		meta(charset='utf-8')
 		meta(http-equiv='X-UA-Compatible', content='IE=edge')
 		meta(name='viewport', content='width=device-width, initial-scale=1')
@@ -19,14 +19,17 @@ html
 					a.navbar-brand(href='#') Project name
 				#navbar.collapse.navbar-collapse
 					ul.nav.navbar-nav
-						li(class=(title === 'Basic Express: Home' ? 'active' : ''))
+						li(class=(title === 'Home' ? 'active' : ''))
 							a(href='/') Home
-						li(class=(title === 'Basic Express: About' ? 'active' : ''))
+						li(class=(title === 'About' ? 'active' : ''))
 							a(href='/about') About
-						li(class=(title === 'Basic Express: Contact' ? 'active' : ''))
+						li(class=(title === 'Contact' ? 'active' : ''))
 							a(href='/contact') Contact
-		.container
+		//- .container
 		block content
+
+		footer
+			p &copy; 2015 blukuthuks
 
 		script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
 		script(src='javascripts/bootstrap.min.js')

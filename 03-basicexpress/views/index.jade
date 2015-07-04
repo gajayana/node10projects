@@ -1,5 +1,22 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+	.jumbotron
+		.container
+			h1 How may I help yo?
+			p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit eaque quaerat repudiandae, animi natus labore suscipit consequatur ipsum vel, necessitatibus rem sed fugit ad nemo. Doloremque qui error voluptatum, dolores?
+			a.btn.btn-primary.btn-lg(href='/') Learn more &raquo;
+	.container
+		.row
+			.col-md-4
+				h2 About us
+				p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id temporibus sunt, neque praesentium minus illo exercitationem ducimus aliquam quia quasi quis ipsam error natus esse. Et minima, voluptas voluptatem enim.
+				a.btn.btn-default(href='/about') View details
+			.col-md-4
+				h2 Services
+				p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id temporibus sunt, neque praesentium minus illo exercitationem ducimus aliquam quia quasi quis ipsam error natus esse. Et minima, voluptas voluptatem enim.
+				a.btn.btn-default(href='/services') View details
+			.col-md-4
+				h2 Get in touch
+				p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id temporibus sunt, neque praesentium minus illo exercitationem ducimus aliquam quia quasi quis ipsam error natus esse. Et minima, voluptas voluptatem enim.
+				a.btn.btn-default(href='/contact') View details
