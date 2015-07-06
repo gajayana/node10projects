@@ -1,0 +1,25 @@
+extends layout
+
+block content
+	h1 Registar Area
+	p nyamnyamnyam
+	form(method='post',action='/users/register', enctype='multipart/form-data')
+		.form-group
+			label Name
+			input.form-control(name='name', type='text', placeholder='Your name')
+		.form-group
+			label Email
+			input.form-control(name='email', type='email', placeholder='Your email')
+		.form-group
+			label Username
+			input.form-control(name='username', type='text', placeholder='Your username')
+		.form-group
+			label Password
+			input.form-control(name='password', type='password', placeholder='Your password')
+		.form-group
+			label Confirm Password
+			input.form-control(name='password2', type='passwors', placeholder='Confirm password')
+		.form-group
+			label Profile image
+			input.form-control(name='profileimage', type='file')
+		input.btn.btn-default(name='submit', type='submit', value='Register')
