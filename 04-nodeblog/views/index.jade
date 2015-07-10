@@ -6,8 +6,10 @@ block content
 			.post
 				h1
 					a(href='/posts/show/#{post._id}')= post.title
-				p.meta Posted in 
-					a(href='/categories/show/#{post.category}') #{post.category} by #{post.author} on #{moment(post.date).format('DD-MM-YYYY HH:MM')}
+				p.meta 
+					| Posted in 
+					a(href='/categories/show/#{post.category}') #{post.category} 
+					| by #{post.author} on #{moment(post.date).format('DD-MM-YYYY HH:MM')}
 				
 				if (post.mainimage)
 					img(src='/images/uploads/#{post.mainimage}')

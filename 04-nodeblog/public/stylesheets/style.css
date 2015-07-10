@@ -109,7 +109,7 @@ input, select, textarea {
 	margin-bottom: 15px;
 }
 
-input[type=text], select, textarea {
+input[type=text], input[type=email], select, textarea {
 	padding: 3px;
 	height: 20px;
 	width: 200px;
@@ -156,4 +156,24 @@ footer {
 	text-align: center;
 	height: 30px;
 	border: solid 1px #ccc;
+}
+
+.show img {
+	display: block;
+	width: 100%;
+}
+
+.comment {
+	background: #ccc;
+	padding: 5px;
+	border: solid 1px #666;
+	margin: 15px 0 20px;
+}
+
+.comment-form {
+	margin: 30px 0;
+}
+
+.comment-name {
+	font-weight: bold;
 }
